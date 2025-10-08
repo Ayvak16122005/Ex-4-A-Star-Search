@@ -5,15 +5,15 @@
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 
 <H3>Algorithm:</H3>
-```PYTHON
-1.Initialize
+
+1. Initialize
 Open list ← priority queue (min-heap)
 Closed list ← empty set
 Insert the start node into the open list with:
   g = 0
   h = heuristic(start)
   f = g + h
-2.While Open list is not empty:
+2. While Open list is not empty:
 Remove the node q with the lowest f from the open list.
 If q is the goal node, return the path (reconstruct from parents).
 If q is already in the Closed list, skip it.
