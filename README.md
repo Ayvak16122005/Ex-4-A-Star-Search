@@ -6,32 +6,31 @@
 
 <H3>Algorithm:</H3>
 
-1. Initialize
-Open list ← priority queue (min-heap)
-Closed list ← empty set
-Insert the start node into the open list with:
-  g = 0
-  h = heuristic(start)
-  f = g + h
-2. While Open list is not empty:
-Remove the node q with the lowest f from the open list.
-If q is the goal node, return the path (reconstruct from parents).
-If q is already in the Closed list, skip it.
-Add q to the Closed list.
-3.For each neighbor n of q:
-Compute:
-  g(n) = g(q) + cost(q, n)
-  h(n) = heuristic(n)
-  f(n) = g(n) + h(n)
-If n is not in Closed list:
-Insert (f(n), g(n), n, path_so_far) into Open list.
+<p>1. Initialize</p>
+<p>Open list ← priority queue (min-heap)</p>
+<p>Closed list ← empty set</p>
+<p>Insert the start node into the open list with:</p>
+<p>  g = 0</p>
+<p>  h = heuristic(start)</p>
+<p>  f = g + h</p>
+<p>2. While Open list is not empty:</p>
+<p>Remove the node q with the lowest f from the open list.</p>
+<p>If q is the goal node, return the path (reconstruct from parents).</p>
+<p>If q is already in the Closed list, skip it.</p>
+<p>Add q to the Closed list.</p>
+<p>3.For each neighbor n of q:</p>
+<p>Compute:</p>
+<p>  g(n) = g(q) + cost(q, n)</p>
+<p>  h(n) = heuristic(n)</p>
+<p>  f(n) = g(n) + h(n)</p>
+<p>If n is not in Closed list:</p>
+<p>Insert (f(n), g(n), n, path_so_far) into Open list.</p>
 
-4.If goal is never reached and Open list becomes empty:
-Return "No path found".
-```
+<p>4.If goal is never reached and Open list becomes empty:</p>
+<p>Return "No path found".</p>
+
 ## PROGRAM
 ```python
-
 
 import heapq
 
