@@ -5,6 +5,7 @@
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 
 <H3>Algorithm:</H3>
+```PYTHON
 1.Initialize
 Open list ← priority queue (min-heap)
 Closed list ← empty set
@@ -27,7 +28,7 @@ Insert (f(n), g(n), n, path_so_far) into Open list.
 
 4.If goal is never reached and Open list becomes empty:
 Return "No path found".
-
+```
 ## PROGRAM
 ```python
 
@@ -62,16 +63,12 @@ GRAPH :
 
 
 INPUT:
+
 A B 3
-
 A D 5
-
 B C 4
-
 C E 6
-
 D F 1
-
 E F 2
 
 Output:
