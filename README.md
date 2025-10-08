@@ -62,14 +62,14 @@ GRAPH :
 
 
 INPUT:
-
+```python
 A B 3
 A D 5
 B C 4
 C E 6
 D F 1
 E F 2
-
+```
 Output:
 
 <img width="739" height="431" alt="Screenshot 2025-10-08 102834" src="https://github.com/user-attachments/assets/48ff2696-71ab-4e7a-be9e-38d80f8d4385" />
